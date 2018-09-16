@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		FA7EB37B214DB8F600F41259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EB37A214DB8F600F41259 /* AppDelegate.swift */; };
-		FA7EB37D214DB8F600F41259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EB37C214DB8F600F41259 /* ViewController.swift */; };
+		FA7EB37D214DB8F600F41259 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EB37C214DB8F600F41259 /* HomeController.swift */; };
 		FA7EB380214DB8F600F41259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EB37E214DB8F600F41259 /* Main.storyboard */; };
 		FA7EB382214DB8F700F41259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7EB381214DB8F700F41259 /* Assets.xcassets */; };
 		FA7EB385214DB8F700F41259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EB383214DB8F700F41259 /* LaunchScreen.storyboard */; };
+		FA7EB38F214DC63000F41259 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EB38E214DC63000F41259 /* Extensions.swift */; };
+		FA7EB3A0214E03FF00F41259 /* MenuBottomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EB39F214E03FF00F41259 /* MenuBottomViews.swift */; };
+		FA7EB3A3214E063900F41259 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EB3A2214E063900F41259 /* BaseCell.swift */; };
+		FA7EB3A5214E065600F41259 /* MenuBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EB3A4214E065600F41259 /* MenuBottomCell.swift */; };
+		FA7EB3A7214E27D700F41259 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EB3A6214E27D700F41259 /* SectionCell.swift */; };
+		FA7F6A8D214E9A9E00B65D0A /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6A8C214E9A9E00B65D0A /* ViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA7EB377214DB8F600F41259 /* TrelloApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrelloApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7EB37A214DB8F600F41259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA7EB37C214DB8F600F41259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA7EB37C214DB8F600F41259 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		FA7EB37F214DB8F600F41259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA7EB381214DB8F700F41259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7EB384214DB8F700F41259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7EB386214DB8F700F41259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7EB38E214DC63000F41259 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA7EB39F214E03FF00F41259 /* MenuBottomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBottomViews.swift; sourceTree = "<group>"; };
+		FA7EB3A2214E063900F41259 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		FA7EB3A4214E065600F41259 /* MenuBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBottomCell.swift; sourceTree = "<group>"; };
+		FA7EB3A6214E27D700F41259 /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		FA7F6A8C214E9A9E00B65D0A /* ViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		FA7EB379214DB8F600F41259 /* TrelloApplication */ = {
 			isa = PBXGroup;
 			children = (
+				FA7EB3A1214E062200F41259 /* Cells */,
+				FA7EB39E214E03F000F41259 /* Views */,
+				FA7EB38D214DC61A00F41259 /* Helpers */,
+				FA7EB38C214DC30600F41259 /* Controllers */,
 				FA7EB37A214DB8F600F41259 /* AppDelegate.swift */,
-				FA7EB37C214DB8F600F41259 /* ViewController.swift */,
 				FA7EB37E214DB8F600F41259 /* Main.storyboard */,
 				FA7EB381214DB8F700F41259 /* Assets.xcassets */,
 				FA7EB383214DB8F700F41259 /* LaunchScreen.storyboard */,
 				FA7EB386214DB8F700F41259 /* Info.plist */,
 			);
 			path = TrelloApplication;
+			sourceTree = "<group>";
+		};
+		FA7EB38C214DC30600F41259 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EB37C214DB8F600F41259 /* HomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA7EB38D214DC61A00F41259 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EB38E214DC63000F41259 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA7EB39E214E03F000F41259 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EB39F214E03FF00F41259 /* MenuBottomViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA7EB3A1214E062200F41259 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EB3A2214E063900F41259 /* BaseCell.swift */,
+				FA7EB3A4214E065600F41259 /* MenuBottomCell.swift */,
+				FA7EB3A6214E27D700F41259 /* SectionCell.swift */,
+				FA7F6A8C214E9A9E00B65D0A /* ViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7EB37D214DB8F600F41259 /* ViewController.swift in Sources */,
+				FA7EB3A0214E03FF00F41259 /* MenuBottomViews.swift in Sources */,
+				FA7EB37D214DB8F600F41259 /* HomeController.swift in Sources */,
+				FA7EB3A7214E27D700F41259 /* SectionCell.swift in Sources */,
+				FA7EB3A3214E063900F41259 /* BaseCell.swift in Sources */,
+				FA7F6A8D214E9A9E00B65D0A /* ViewCell.swift in Sources */,
+				FA7EB38F214DC63000F41259 /* Extensions.swift in Sources */,
+				FA7EB3A5214E065600F41259 /* MenuBottomCell.swift in Sources */,
 				FA7EB37B214DB8F600F41259 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
